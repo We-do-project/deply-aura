@@ -1,0 +1,235 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ffff99, #ff99cc, #9999ff);
+    margin: 0;
+    padding: 0; /* Remove padding from body */
+}
+
+.header {
+    position: relative; /* Position relative for absolute positioning of pseudo-element */
+    height: 50vh; /* Set height to 50% of the viewport height */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    text-align: center; /* Center text */
+    overflow: hidden; /* Hide overflow */
+}
+
+.header::before {
+    content: ""; /* Required for pseudo-element */
+    position: absolute; /* Position it absolutely */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(assets/b2.jpg); /* Set the background image */
+    background-size: cover; /* Cover the entire header */
+    background-position: center; /* Center the image */
+    opacity: 0.7; /* Adjust opacity for fading effect */
+    z-index: 1; /* Place it below the text */
+}
+
+.header::after {
+    content: ""; /* Required for pseudo-element */
+    position: absolute; /* Position it absolutely */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with transparency */
+    z-index: 2; /* Place it above the image */
+}
+
+.header h1,
+.header p {
+    position: relative; /* Position text above the pseudo-element */
+    color: white; /* Change text color to white for better contrast */
+    z-index: 3; /* Ensure text is above the overlay */
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 3em; /* Adjust font size as needed */
+}
+
+.header p {
+    margin: 10px 0 0;
+    font-size: 1.2em; /* Adjust font size as needed */
+}
+
+.navbar {
+    position: absolute; /* Position navbar absolutely within the header */
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px; /* Add some padding */
+    background-color: transparent; /* Fully transparent background */
+    z-index: 10; /* Ensure navbar is above other content */
+}
+
+.logo {
+    height: 60px; /* Adjust logo height as needed */
+    border-radius: 50%; /* Make the logo round */
+}
+
+.aura-title {
+    margin: 0;
+    color: white; /* Change color as needed */
+}
+
+.container {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Space between items */
+    padding: 20px;
+}
+
+.item {
+    background-color: lavender; /* Background color for job items */
+    border: 1px solid #ddd; /* Border for job items */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center text */
+    transition: transform 0.2s; /* Smooth scaling effect */
+    height: 335px; /* Set a fixed height for all items */
+    display: flex; /* Use flexbox for centering content */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-start; /* Align items to the top */
+}
+
+.item img {
+    width: 100%; /* Make images responsive */
+    height: 250px; /* Set a fixed height for images */
+    object-fit: cover; /* Ensure images cover the area without distortion */
+    border-top-left-radius: 5px; /* Rounded corners for the top */
+    border-top-right-radius: 5px; /* Rounded corners for the top */
+    transition: transform 0.2s; /* Smooth scaling effect */
+}
+
+.item h3 {
+    margin: 10px 0; /* Space above and below the title */
+    font-size: 1.2em; /* Adjust font size as needed */
+    color: #333; /* Change text color as needed */
+}
+
+.item a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit color from parent element */
+    margin: 10px 0; /* Add some margin for spacing */
+}
+
+.item:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .header {
+        height: 40vh; /* Reduce header height on smaller screens */
+    }
+
+    .header h1 {
+        font-size: 2.5em; /* Adjust font size for smaller screens */
+    }
+
+    .header p {
+        font-size: 1em; /* Adjust font size for smaller screens */
+    }
+
+    .container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    }
+
+    .item {
+        height: auto; /* Allow items to adjust height based on content */
+    }
+
+    .item img {
+        height: 200px; /* Adjust image height for smaller screens */
+    }
+
+    .item h3 {
+        font-size: 1.1em; /* Adjust title font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        height: 30vh; /* Further reduce header height on very small screens */
+    }
+
+    .header h1 {
+        font-size: 2em; /* Further adjust font size for very small screens */
+    }
+
+    .header p {
+        font-size: 0.9em; /* Further adjust font size for very small screens */
+    }
+
+    .container {
+        grid-template-columns: 1fr; /* 1 column on very small screens */
+    }
+
+    .item img {
+        height: 150px; /* Adjust image height for very small screens */
+    }
+
+    .item h3 {
+        font-size: 1em; /* Further adjust title font size for very small screens */
+    }
+}
+footer {
+    background-color: #2f2d2d; /* Dark background */
+    color: white;
+    padding: 20px 40px;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+footer .footer-section {
+    margin-bottom: 20px;
+    flex: 1;
+    min-width: 200px;
+}
+
+footer h3 {
+    margin-top: 0;
+    color: #ffaa33; /* Accent color */
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .social-icons {
+    display: flex;
+    gap: 10px; /* Adjust spacing between icons */
+    margin-top: 20px; /* Add some space above social icons */
+}
+
+footer .social-icons a {
+    color: white; /* Change icon color to white */
+    font-size: 24px; /* Adjust icon size */
+}
+
+footer .copyright {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+}
+
+footer hr {
+    border: 0.5px solid #555;
+}

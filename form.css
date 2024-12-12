@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ffff99, #ff99cc, #9999ff);
+    margin: 0;
+    padding: 20px;
+    display: flex; /* Use flexbox for body */
+    flex-direction: column; /* Stack children vertically */
+    min-height: 100vh; /* Ensure the body takes full height */
+}
+
+.container {
+    max-width: 700px;
+    width: 100%; /* Make the container responsive */
+    margin: auto;
+    background: lavender;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Allow the container to grow and take available space */
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+    width: 98%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f1a4d7;
+    color: black;
+}
+
+.logo {
+    height: 60px; /* Adjust logo height as needed */
+    border-radius: 50%; /* Make the logo round */
+    display: block; /* Center the logo */
+    margin: 0 auto; /* Center the logo */
+}
+
+.dropzone {
+    width: 90%;
+    height: 150px;
+    border: 2px dashed #ccc;
+    border-radius: 4px;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+.dropzone:hover {
+    background-color: #f1f1f1;
+}

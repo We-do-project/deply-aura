@@ -1,15 +1,514 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <mat-icon class="mat-18">ligature</mat-icon>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
+    <title>Aura IT Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/auralogo.jpg" type="jpg">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
 </head>
+
 <body>
- 
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="images/auralogo.jpg" class="logo">
+                    <!-- <h1>AURA</h1> -->
+                </div>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#product-support">Product Support</a>
+                        <ul class="dropdown">
+                            <li><a href="e-scrape.html">E-Scrap</a></li>
+                            <li><a href="av.html">AV Support</a></li>
+                            <li><a href="amc.html">AMC</a></li>
+                            <li><a href="scamera.html">Security Camera</a></li>
+                            <li><a href="mpower.html">Manpower Supply</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#blogs">Blogs</a></li>
+                    <li><a href="#careers">Careers</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+                <div class="right-content">
+                    <a href="login.html" class="nav-btn">Login</a>
+                    <div class="bx bx-menu" id="menu-icon"></div>
+                </div>
+            </nav>
+            <!-- !---------hero------- -->
+            <section class="hero">
+                <div class="hero-text">
+                    <h5 data-aos="fade-right" data-aos-duration="1400"> Empowering Businesses Through Technology.</h5>
+                    <h1 data-aos="zoom-in-left" data-aos-duration="1400" data-aos-delay="200"><span>Aura</span> IT
+                        Consulting & Solutions</h1>
+                    <p data-aos="fade-right" data-aos-duration="1400" data-aos-delay="300">At Aura, we specialize in
+                        providing cutting-edge IT consulting and tailored solutions to empower businesses. With a focus
+                        on innovation, reliability, and 24x7 support, we help clients achieve their goals through
+                        seamless technology integration and expert guidance.
+                    </p>
+                    <div class="main-hero" data-aos="flip-down" data-aos-duration="1400" data-aos-delay="300">
+                        <a href="#about" class="btn">Explore</a>
+                    </div>
+                </div>
+                <div class="hero-img" data-aos="zoom-in" data-aos-duration="1400">
+                    <img src="images/b2.1.png">
+                </div>
+            </section>
+            <div class="scroll" data-aos="zoom-out-down" data-aos-duration="1400" data-aos-delay="550">
+                <a href="#">
+                    <i class="ri-scroll-to-bottom-line"></i>
+                    Scroll Down
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- --------About-------- -->
+    <div id="about">
+        <div class="about1">
+            <div class="inner-section">
+                <h1>Our Story</h1>
+                <P class="text">
+                    Aura IT Consulting and Solutions began with a vision to bridge the gap between cutting-edge
+                    technology and real-world business challenges. Founded by a team of passionate IT professionals, the
+                    company emerged as a trusted partner for organizations seeking innovative, scalable, and sustainable
+                    solutions in a rapidly evolving digital landscape.
+
+                    What started as a small consultancy focused on IT support quickly expanded into a multi-faceted
+                    solutions provider. By listening to clients' needs and staying ahead of industry trends, Aura
+                    diversified its expertise to include product support, AV solutions, e-scrap management, security
+                    systems, and workforce solutions.
+
+                    From humble beginnings, Aura has grown into a dynamic force in the IT consulting industry, driven by
+                    a commitment to excellence, innovation, and customer success. Today, the company continues to
+                    evolve, empowering businesses to adapt, innovate, and thrive in a world where technology shapes the
+                    future.
+                </P>
+                <div class="down-content">
+                    <a href="team.html" class="about-btn">Read More</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="product-support">
+        <div class="slideshow-container">
+            <div class="slide">
+                <div class="caption">
+                    <h1>Annual-Maintenance-Contract</h1>
+                    <p>Our AMC provides year-round support, including regular maintenance, priority service, and quick
+                        issue resolution. We help keep your systems running smoothly, minimizing downtime and extending
+                        the life of your equipment.</p>
+                    <a href="amc.html" class="slide-btn">See More</a>
+                </div>
+                <div class="product-img">
+                    <img src="images/Annual-Maintenance-Contract.jpg">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="caption" style="background-color: transparent;padding: 100px;">
+                    <h1 style="color: aliceblue;">AV Support</h1>
+                    <p style="color: white;">We provide expert audio-visual support to ensure your systems deliver
+                        optimal performance. From installation and integration to troubleshooting and maintenance, our
+                        team ensures seamless operation for meetings, events, and everyday use. Whether it’s AV
+                        equipment setup or system upgrades, we’re dedicated to delivering high-quality, reliable
+                        solutions for all your audio-visual needs.
+                    </p>
+                    <a href="av.html" class="slide-btn">See more</a>
+                </div>
+                <div class="product-img">
+                    <img src="images/audio-engineer.webp">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="caption" style="background-color: white; padding: 125px;">
+                    <h1>Security Camera</h1>
+                    <p>At Aura, we specialize in professional security camera installation, offering tailored solutions
+                        to safeguard your home or business. With cutting-edge technology, expert installation, and
+                        ongoing support, we ensure seamless surveillance and peace of mind.</p>
+                    <a href="scamera.html" class="slide-btn">See more</a>
+                </div>
+                <div class="product-img">
+                    <img src="images/camera-installation-2.jpg">
+                </div>
+            </div>
+            <!-- !-------Navigation Arrows------- -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <!-- dots -->
+        <div class="dots-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+    <!-- ------------------------------------------- -->
+    <div class="grid-container">
+        <div class="service-item">
+            <a href="e-scrape.html"><img src="images/e-scarp.jpg">
+                <p>E-Scarp</p>
+            </a>
+        </div>
+        <div class="service-item">
+            <a href="av.html"><img src="images/av eng.jpg">
+                <p>AV Support</p>
+            </a>
+        </div>
+        <div class="service-item">
+            <a href="amc.html"><img src="images/amc1.jpg">
+                <p>AMC</p>
+            </a>
+        </div>
+        <div class="service-item">
+            <a href="scamera.html"><img src="images/camera-installation-2.jpg">
+                <p>Security Camera</p>
+            </a>
+        </div>
+        <div class="service-item">
+            <a href="mpower.html"><img src="images/manpower-supply.webp">
+                <p>Manpower Supply</p>
+            </a>
+        </div>
+    </div>
+    <!-- ------------------------------------------ -->
+    <section class="slider-area">
+        <H1>Who We Work With</H1>
+        <div class="slider">
+
+            <div class="slider-track">
+                <div class="brand">
+                    <img src="images/amazon.png" height="100" width="150">
+                </div>
+                <div class="brand">
+                    <img src="images/microsoft.png" height="100" width="150">
+                </div>
+                <div class="brand">
+                    <img src="images/google.png" height="100" width="150">
+                </div>
+                <div class="brand">
+                    <img src="images/epson.png" height="100" width="150">
+                </div>
+                <div class="brand">
+                    <img src="images/samsung.png" height="100" width="150">
+                </div>
+                <div class="brand">
+                    <img src="images/Hikvision-Logo.png" height="100" width="150">
+                </div>
+                <div class="brand">
+                    <img src="images/sony.png" height="100" width="150">
+                </div>
+                <div class="brand">
+                    <img src="images/panasonic.webp" height="100" width="150">
+                </div>
+
+                <!-- -------Duplicate-------- -->
+                <div class="brand">
+                    <img src="images/amazon.png" height="100" width="150">
+                </div>
+                <div class="brand">
+                    <img src="images/microsoft.png" height="100" width="150">
+                </div>
+                <div class="brand">
+                    <img src="images/google.png" height="100" width="150">
+                </div>
+                <div class="brand">
+                    <img src="images/epson.png" height="100" width="150">
+                </div>
+                <div class="brand">
+                    <img src="images/samsung.png" height="100" width="150">
+                </div>
+                <div class="brand">
+                    <img src="images/Hikvision-Logo.png" height="100" width="150">
+                </div>
+                <div class="brand">
+                    <img src="images/sony.png" height="100" width="150">
+                </div>
+                <div class="brand">
+                    <img src="images/panasonic.webp" height="100" width="150">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    </div>
+    <section id="blogs">
+        <div class="blog-container">
+            <h1>BLOG</h1>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="icon"></div>
+                    <div class="blog-content">
+                        <h2>Vision</h2>
+                        <p>Is to achieve more clients in the upcoming financial year 2025 to make the organisation grow up on a large scale</p>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="icon"></div>
+                    <div class="blog-content">
+                        <h2>Mission</h2>
+                        <p>To hire and give opportunity 200+ employee in the upcoming financial year 2025 and we are already in the mission to bring it in live</p>
+                    </div>
+                </div>
+               
+        </div>
+    
+
+    </section>
+    <section id="careers" class="careers">
+        <div class="careers-text">
+            <h1>Work remotely with our outstanding team from around the world</h1>
+            <p>Join our dynamic team and be part of a journey where innovation meets excellence. We empower talents,
+                foster growth, and create opportunities to make an impact together.</p>
+            <a href="career.html" class="career-btn">Explore Careers</a>
+        </div>
+    </section>
+    <section class="review">
+        <div class="review-container">
+            <h2>Leave Your Review</h2>
+            <div class="stars">
+                <input type="radio" id="star5" name="rating" value="5"><label for="star5" title="5 stars">★</label>
+                <input type="radio" id="star4" name="rating" value="4"><label for="star4" title="4 stars">★</label>
+                <input type="radio" id="star3" name="rating" value="3"><label for="star3" title="3 stars">★</label>
+                <input type="radio" id="star2" name="rating" value="2"><label for="star2" title="2 stars">★</label>
+                <input type="radio" id="star1" name="rating" value="1"><label for="star1" title="1 star">★</label>
+            </div>
+            <textarea placeholder="Write your feedback..." rows="4"></textarea>
+            <div><button type="submit">Submit</button></div>
+        </div>
+         
+        
+    </section>
+    
+    <section id="contact">
+        <div class="container12">
+            <!-- Left Section -->
+            <div class="info-section">
+                <div class="info">
+                    <h3>Quick response</h3>
+                    <p>We usually reply within 1 hour on business days to sign an NDA and arrange a discussion.</p>
+                </div>
+                <div class="info">
+                    <h3>Personalized approach</h3>
+                    <p>You will engage directly with specialists who are experienced in your domain.</p>
+                </div>
+                <div class="info">
+                    <h3>No pressure</h3>
+                    <p>We’re here to explore your needs and provide guidance — whenever you're ready to move forward.</p>
+                </div>
+            </div>
+            <!-- Right Section -->
+            <div class="form-section">
+                <h2>Let's discuss your needs!</h2>
+                <p>
+                    Do you have a question for our specialists, want to discuss your project, or learn more about our expertise? 
+                    Feel free to send your request using the form below!
+                </p>
+                <form action="#" method="POST">
+                    <textarea placeholder="Kindly describe your request." required></textarea>
+                    <div class="nda-toggle">
+                        <label for="nda">I'd like to sign an NDA</label>
+                        <input type="checkbox" id="nda">
+                    </div>
+                    <div class="input-group">
+                        <input type="text" placeholder="Full name" required>
+                        <input type="text" placeholder="Company" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" placeholder="Work email" required>
+                        <div class="input-group">
+                            <select id="country-code" required>
+                                <option value="+1">USA (+1)</option>
+                                <option value="+44">UK (+44)</option>
+                                <option value="+91">India (+91)</option>
+                                <option value="+61">Australia (+61)</option>
+                                <option value="+81">Japan (+81)</option>
+                                <option value="+49">Germany (+49)</option>
+                                <option value="+33">France (+33)</option>
+                                <option value="+39">Italy (+39)</option>
+                                <option value="+34">Spain (+34)</option>
+                                <option value="+86">China (+86)</option>
+                                <!-- Add more country codes as needed -->
+                            </select>
+                            <input type="tel" placeholder="00000 00000" required>
+                        </div>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+            <!-- Centered Contact Info Section -->
+            <div class="contact-info">
+                <h3>Our contacts</h3>
+                <p>📞 +12143066837</p>
+                <a href=""><p>📧 contact@scnsoft.com</p></a>
+                
+               
+                <h3>Social media</h3>
+                <div class="social-icons">
+                   
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                  
+                </div>
+            </div>
+    
+        </div>
+        </div>
+    </section>
+
+    <!-- ---------------------------------------------------- -->
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Programs</h3>
+                <p><a href="#">Corporate</a></p>
+                <p><a href="#">One to One</a></p>
+                <p><a href="#">Consulting</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Service</h3>
+                <p><a href="#">Training</a></p>
+                <p><a href="#">Coaching</a></p>
+                <p><a href="#">Consulting</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Overview</h3>
+                <p><a href="#header">Home</a></p>
+                <p><a href="#about">About</a></p>
+                <p><a href="#contact">Contact</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>Mobile: +917829474250</p>
+                <p>Email: <a href="mailto:santhosh@crosscultureconnects.com">santhosh@crosscultureconnects.com</a></p>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <center>Aura IT Consulting and Solution</center>
+       
+        <hr>
+        <div class="copyright">
+            &copy; 2022 Aura IT Consulting and Solution
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 1,
+        });
+    </script>
+
+    <!-- _____________slideshow---------- -->
+
+    <script>
+
+        let slideIndex = 0; // Current slide index
+        let autoPlayTimeout; // Variable to store the auto-play timer
+        showSlides(); // Initialize the slideshow
+
+        // Function to show slides
+        function showSlides() {
+            let slides = document.getElementsByClassName("slide");
+            let dots = document.getElementsByClassName("dot");
+
+            // Hide all slides
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            // Remove "active" class from all dots
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            // Increment slide index
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1; // Loop back to the first slide
+            }
+
+            // Display the current slide and activate the corresponding dot
+            slides[slideIndex - 1].style.display = "flex";
+            dots[slideIndex - 1].className += " active";
+
+            // Set the auto-play timer for the next slide
+            autoPlayTimeout = setTimeout(showSlides, 10000); // Change slide every 10 seconds
+        }
+
+        // Function to move slides manually
+        function plusSlides(n) {
+            // Clear the current auto-play timer
+            clearTimeout(autoPlayTimeout);
+
+            // Adjust the slide index and loop if necessary
+            slideIndex += n;
+            let slides = document.getElementsByClassName("slide");
+            if (slideIndex > slides.length) {
+                slideIndex = 1; // Loop to first slide
+            }
+            if (slideIndex < 1) {
+                slideIndex = slides.length; // Loop to last slide
+            }
+
+            // Show the adjusted slide
+            resetSlides();
+
+            // Restart the auto-play timer
+            autoPlayTimeout = setTimeout(showSlides, 10000);
+        }
+
+        // Function to jump to a specific slide
+        function currentSlide(n) {
+            // Clear the current auto-play timer
+            clearTimeout(autoPlayTimeout);
+
+            // Set the slide index to the specific slide
+            slideIndex = n;
+
+            // Show the selected slide
+            resetSlides();
+
+            // Restart the auto-play timer
+            autoPlayTimeout = setTimeout(showSlides, 10000);
+        }
+
+        // Helper function to reset slides and display the current one
+        function resetSlides() {
+            let slides = document.getElementsByClassName("slide");
+            let dots = document.getElementsByClassName("dot");
+
+            // Hide all slides
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            // Remove "active" class from all dots
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            // Display the current slide and activate the corresponding dot
+            slides[slideIndex - 1].style.display = "flex";
+            dots[slideIndex - 1].className += " active";
+        }
+
+    </script>
 </body>
+
 </html>
