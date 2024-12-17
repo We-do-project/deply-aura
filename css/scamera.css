@@ -1,0 +1,286 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(73, 129, 232);
+}
+
+.header {
+    position: relative; /* Position relative for absolute positioning of pseudo-element */
+    height: 50vh; /* Set height to 50% of the viewport height */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    text-align: center; /* Center text */
+    overflow: hidden; /* Hide overflow */
+}
+
+.header::before {
+    content: ""; /* Required for pseudo-element */
+    position: absolute; /* Position it absolutely */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(assets/csh2.jpg); /* Set the background image */
+    background-size: cover; /* Cover the entire header */
+    background-position: center; /* Center the image */
+    
+    z-index: 1; /* Place it below the text */
+}
+
+.header::after {
+    content: ""; /* Required for pseudo-element */
+    position: absolute; /* Position it absolutely */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  
+    z-index: 2; /* Place it above the image */
+}
+
+.header h1,
+.header p {
+    position: relative; /* Position text above the pseudo-element */
+    color: white; /* Change text color to white for better contrast */
+    z-index: 3; /* Ensure text is above the overlay */
+}
+.navbar {
+    position: absolute; /* Position navbar absolutely within the header */
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px; /* Add some padding */
+    background-color: transparent; /* Fully transparent background */
+    z-index: 10; /* Ensure navbar is above other content */
+}
+
+.challenge-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 40px auto;
+    border-radius: 8px;
+}
+
+.image-container img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 300px;
+}
+
+.text-container {
+    max-width: 600px;
+}
+
+.text-container h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.text-container p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+.challenge1-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 40px auto;
+    border-radius: 8px;
+}
+.challenge2-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 40px auto;
+    border-radius: 8px;
+}
+
+.logo {
+    height: 60px; 
+    border-radius: 50%;
+   
+}
+
+
+
+
+
+
+
+
+
+
+/* --------------------------- */
+
+footer {
+    background-color: #2f2d2d; /* Dark background */
+    color: white;
+    padding: 20px 40px;
+    margin-top: 15px;
+    
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+footer .footer-section {
+    margin-bottom: 20px;
+    flex: 1;
+    min-width: 200px;
+}
+
+footer h3 {
+    margin-top: 0;
+    color: #ffaa33; /* Accent color */
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .social-icons {
+    display: flex;
+    gap: 10px; /* Adjust spacing between icons */
+    margin-top: 20px; /* Add some space above social icons */
+}
+
+footer .social-icons a {
+    color: white; /* Change icon color to white */
+    font-size: 24px; /* Adjust icon size */
+}
+
+footer .copyright {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+}
+
+footer hr {
+    border: 0.5px solid #555;
+}
+/* Styles for 320px x 480px Mobile Phones */
+@media (max-width: 320px) {
+    body {
+        font-size: 14px; /* Adjust base font size for better readability */
+    }
+
+    .header {
+        height: 40vh; /* Reduce height for smaller screens */
+        padding: 10px; /* Add some padding */
+    }
+
+    .header h1 {
+        font-size: 24px; /* Smaller font size for the main heading */
+    }
+
+    .header p {
+        font-size: 12px; /* Smaller font size for paragraph */
+    }
+
+    .navbar {
+        padding: 5px 10px; /* Reduce padding for navbar */
+    }
+
+    .navbar a {
+        font-size: 12px; /* Smaller font size for navbar links */
+    }
+
+    .challenge-section,
+    .challenge1-section,
+    .challenge2-section {
+        flex-direction: column; /* Stack items vertically */
+        padding: 10px; /* Reduce padding */
+        margin: 20px; /* Reduce margin */
+    }
+
+    .image-container img {
+        height: auto; /* Allow height to adjust */
+        max-height: 200px; /* Limit height for images */
+    }
+
+    .text-container {
+        max-width: 100%; /* Full width for text container */
+    }
+
+    .text-container h2 {
+        font-size: 1.5rem; /* Smaller font size for headings */
+    }
+
+    .text-container p {
+        font-size: 0.9rem; /* Smaller font size for paragraphs */
+    }
+
+    footer {
+        padding: 10px; /* Reduce padding */
+        text-align: center; /* Center text */
+    }
+
+    footer .footer-content {
+        flex-direction: column; /* Stack footer sections */
+        align-items: center; /* Center footer content */
+    }
+
+    footer .footer-section {
+        margin-bottom: 10px; /* Reduce margin */
+        width: 100%; /* Full width for footer sections */
+        text-align: center; /* Center text */
+    }
+
+    footer h3 {
+        font-size: 14px; /* Smaller font size for footer headings */
+    }
+
+    footer a {
+        font-size: 12px; /* Smaller font size for footer links */
+    }
+
+    footer .social-icons {
+        flex-direction: row; /* Keep social icons in a row */
+        justify-content: center; /* Center social icons */
+    }
+
+    footer .social-icons a {
+        font-size: 20px; /* Adjust icon size */
+    }
+
+    footer .copyright {
+        font-size: 12px; /* Smaller font size for copyright text */
+    }
+
+    footer hr {
+        border: 0.5px solid #555; /* Keep the border style */
+    }
+}

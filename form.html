@@ -3,39 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="aura.jpg">
-    <link rel="stylesheet" href="form.css">
     <title>Job Application Form</title>
+   <link rel="stylesheet" href="./css/form.css">
 </head>
 <body>
-    <div class="container">
-        <div>
-            <img src="../assets/aura.jpg" alt="Logo" class="logo"> 
-            <h1>AURA Application Form</h1>
+    <form class="application-form" action="/submit-application" method="post" enctype="multipart/form-data">
+        <h2>Job Application Form</h2>
+        <div class="form-group">
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" name="full_name" required>
         </div>
-        
-        <form id="jobApplicationForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required placeholder="Enter your name">
-
-            <label for="surname">Surname:</label>
-            <input type="text" id="surname" name="surname" required placeholder="Enter your surname">
-
-            <label for="dob">Date of Birth:</label>
-            <input type="date" id="dob" name="dob" required>
-            
-            <label>Gender:</label>
-            <label for="male">
-                <input type="radio" id="male" name="gender" value="male" required> Male<input type="radio" id="female" name="gender" value="female" required> Female <input type="radio" id="other" name="gender" value="other" required> Other
-            </label>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required placeholder="Enter your email address">
-
-            <label for="number">Mobile Number:</label>
-            <input type="text" id="number" name="number" required placeholder="Enter your 10 digit number">
-
-            <label for="degree">Degree:</label>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+        <label for="degree">Degree:</label>
             <select id="degree" name="degree" required>
                 <option value="">Select Your Degree</option>
                 <option value="10th/12th">10th/12th</option>
@@ -43,7 +30,8 @@
                 <option value="UnderGraduate">Under Graduate</option>
                 <option value="PostGraduate">Post Graduate</option>
             </select>
-
+        </div>
+        <div class="form-group">
             <label for="job">Job Position:</label>
             <select id="job" name="job" required>
                 <option value="">Select a job</option>
@@ -56,22 +44,18 @@
                 <option value="System Administrator">System Administrator</option>
                 <option value="System Engineer">System Engineer</option>
             </select>
-
-            <label for="experience">Years of Experience:</label>
+        </div>
+        <div class="form-group">
+        <label for="experience">Years of Experience:</label>
             <input type="text" id="experience" name="experience" required placeholder="Enter your years of experience">
-
-            <label for="resume">Upload Resume:</label>
-            <div id="resume-upload" class="dropzone"></div>
-
-            <label for="feedback">Feedback:</label>
-            <textarea id="feedback" name="feedback" rows="4" placeholder="Enter your feedback"></textarea>
-
+        </div>
+        <div class="form-group">
+            <label for="resume">Upload Resume</label>
+            <input type="file" id="resume" name="resume" accept="application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document" required>
+        </div>
+        <div class="form-group">
             <button type="submit">Submit Application</button>
-        </form>
-    </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.2/min/dropzone.min.js"></script>
-    <script src="form.js"></script>
-    
+        </div>
+    </form>
 </body>
 </html>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aura IT Solutions</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="icon" href="images/auralogo.jpg" type="jpg">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
@@ -15,34 +15,50 @@
 </head>
 
 <body>
+    
     <div id="header">
-        <div class="container">
-            <nav>
+        <nav>
+            <ul class="sidebar">
+              <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+              <li><a href="#"><img src="auralogo.jpg" class="logo"></a></li>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Product Support</a></li>
+              <li><a href="#">Careera</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="">Login</a></li>
+            </ul>
+            <ul>
+              <li><a href="#"><img src="auralogo.jpg" class="logo"></a></li>
+              <li class="hideOnMobile"><a href="#">Home</a></li>
+              <li class="hideOnMobile"><a href="#">About</a></li>
+              <li class="hideOnMobile"><a href="#">Product Support</a></li>
+              <li class="hideOnMobile"><a href="#">careers</a></li>
+              <li class="hideOnMobile"><a href="#">Contact</a></li>
+              <li class="hideOnMobile"><a href="#"><button class=".nav-btn">Login</button></a></li>
+              <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+            </ul>
+          </nav>
+            <!-- <nav>
                 <div class="logo">
                     <img src="images/auralogo.jpg" class="logo">
-                    <!-- <h1>AURA</h1> -->
+                    <h1>AURA</h1>
                 </div>
-                <ul>
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#product-support">Product Support</a>
-                        <ul class="dropdown">
-                            <li><a href="e-scrape.html">E-Scrap</a></li>
-                            <li><a href="av.html">AV Support</a></li>
-                            <li><a href="amc.html">AMC</a></li>
-                            <li><a href="scamera.html">Security Camera</a></li>
-                            <li><a href="mpower.html">Manpower Supply</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#blogs">Blogs</a></li>
-                    <li><a href="#careers">Careers</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                </ul>
+                <div>
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="product.html">Product Support</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+             
                 <div class="right-content">
                     <a href="login.html" class="nav-btn">Login</a>
                     <div class="bx bx-menu" id="menu-icon"></div>
                 </div>
-            </nav>
+            </nav> -->
             <!-- !---------hero------- -->
             <section class="hero">
                 <div class="hero-text">
@@ -68,9 +84,9 @@
                     Scroll Down
                 </a>
             </div>
-        </div>
+        
     </div>
-    <!-- --------About-------- -->
+    <!----------About-------- -->
     <div id="about">
         <div class="about1">
             <div class="inner-section">
@@ -98,86 +114,8 @@
             </div>
         </div>
     </div>
-    <div id="product-support">
-        <div class="slideshow-container">
-            <div class="slide">
-                <div class="caption">
-                    <h1>Annual-Maintenance-Contract</h1>
-                    <p>Our AMC provides year-round support, including regular maintenance, priority service, and quick
-                        issue resolution. We help keep your systems running smoothly, minimizing downtime and extending
-                        the life of your equipment.</p>
-                    <a href="amc.html" class="slide-btn">See More</a>
-                </div>
-                <div class="product-img">
-                    <img src="images/Annual-Maintenance-Contract.jpg">
-                </div>
-            </div>
-            <div class="slide">
-                <div class="caption" style="background-color: transparent;padding: 100px;">
-                    <h1 style="color: aliceblue;">AV Support</h1>
-                    <p style="color: white;">We provide expert audio-visual support to ensure your systems deliver
-                        optimal performance. From installation and integration to troubleshooting and maintenance, our
-                        team ensures seamless operation for meetings, events, and everyday use. Whether it’s AV
-                        equipment setup or system upgrades, we’re dedicated to delivering high-quality, reliable
-                        solutions for all your audio-visual needs.
-                    </p>
-                    <a href="av.html" class="slide-btn">See more</a>
-                </div>
-                <div class="product-img">
-                    <img src="images/audio-engineer.webp">
-                </div>
-            </div>
-            <div class="slide">
-                <div class="caption" style="background-color: white; padding: 125px;">
-                    <h1>Security Camera</h1>
-                    <p>At Aura, we specialize in professional security camera installation, offering tailored solutions
-                        to safeguard your home or business. With cutting-edge technology, expert installation, and
-                        ongoing support, we ensure seamless surveillance and peace of mind.</p>
-                    <a href="scamera.html" class="slide-btn">See more</a>
-                </div>
-                <div class="product-img">
-                    <img src="images/camera-installation-2.jpg">
-                </div>
-            </div>
-            <!-- !-------Navigation Arrows------- -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <!-- dots -->
-        <div class="dots-container">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-    </div>
-    <!-- ------------------------------------------- -->
-    <div class="grid-container">
-        <div class="service-item">
-            <a href="e-scrape.html"><img src="images/e-scarp.jpg">
-                <p>E-Scarp</p>
-            </a>
-        </div>
-        <div class="service-item">
-            <a href="av.html"><img src="images/av eng.jpg">
-                <p>AV Support</p>
-            </a>
-        </div>
-        <div class="service-item">
-            <a href="amc.html"><img src="images/amc1.jpg">
-                <p>AMC</p>
-            </a>
-        </div>
-        <div class="service-item">
-            <a href="scamera.html"><img src="images/camera-installation-2.jpg">
-                <p>Security Camera</p>
-            </a>
-        </div>
-        <div class="service-item">
-            <a href="mpower.html"><img src="images/manpower-supply.webp">
-                <p>Manpower Supply</p>
-            </a>
-        </div>
-    </div>
+    <!-- ---------------------------------------------- -->
+    
     <!-- ------------------------------------------ -->
     <section class="slider-area">
         <H1>Who We Work With</H1>
@@ -390,12 +328,12 @@
                 <p>Email: <a href="mailto:santhosh@crosscultureconnects.com">santhosh@crosscultureconnects.com</a></p>
             </div>
             <div class="social-icons">
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <!-- <a href="#"><i class="fab fa-whatsapp"></i></a>
                 <a href="#"><i class="fab fa-youtube"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a> -->
                 <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
             </div>
         </div>
         <center>Aura IT Consulting and Solution</center>
@@ -414,101 +352,20 @@
         });
     </script>
 
-    <!-- _____________slideshow---------- -->
 
-    <script>
+<script>
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+  </script>
+   
 
-        let slideIndex = 0; // Current slide index
-        let autoPlayTimeout; // Variable to store the auto-play timer
-        showSlides(); // Initialize the slideshow
-
-        // Function to show slides
-        function showSlides() {
-            let slides = document.getElementsByClassName("slide");
-            let dots = document.getElementsByClassName("dot");
-
-            // Hide all slides
-            for (let i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-
-            // Remove "active" class from all dots
-            for (let i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-
-            // Increment slide index
-            slideIndex++;
-            if (slideIndex > slides.length) {
-                slideIndex = 1; // Loop back to the first slide
-            }
-
-            // Display the current slide and activate the corresponding dot
-            slides[slideIndex - 1].style.display = "flex";
-            dots[slideIndex - 1].className += " active";
-
-            // Set the auto-play timer for the next slide
-            autoPlayTimeout = setTimeout(showSlides, 10000); // Change slide every 10 seconds
-        }
-
-        // Function to move slides manually
-        function plusSlides(n) {
-            // Clear the current auto-play timer
-            clearTimeout(autoPlayTimeout);
-
-            // Adjust the slide index and loop if necessary
-            slideIndex += n;
-            let slides = document.getElementsByClassName("slide");
-            if (slideIndex > slides.length) {
-                slideIndex = 1; // Loop to first slide
-            }
-            if (slideIndex < 1) {
-                slideIndex = slides.length; // Loop to last slide
-            }
-
-            // Show the adjusted slide
-            resetSlides();
-
-            // Restart the auto-play timer
-            autoPlayTimeout = setTimeout(showSlides, 10000);
-        }
-
-        // Function to jump to a specific slide
-        function currentSlide(n) {
-            // Clear the current auto-play timer
-            clearTimeout(autoPlayTimeout);
-
-            // Set the slide index to the specific slide
-            slideIndex = n;
-
-            // Show the selected slide
-            resetSlides();
-
-            // Restart the auto-play timer
-            autoPlayTimeout = setTimeout(showSlides, 10000);
-        }
-
-        // Helper function to reset slides and display the current one
-        function resetSlides() {
-            let slides = document.getElementsByClassName("slide");
-            let dots = document.getElementsByClassName("dot");
-
-            // Hide all slides
-            for (let i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-
-            // Remove "active" class from all dots
-            for (let i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-
-            // Display the current slide and activate the corresponding dot
-            slides[slideIndex - 1].style.display = "flex";
-            dots[slideIndex - 1].className += " active";
-        }
-
-    </script>
+    
 </body>
 
 </html>

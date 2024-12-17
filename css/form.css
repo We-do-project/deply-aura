@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: lavender;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.application-form {
+    background: white;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+.application-form h2 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 1em;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: #555;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 0.8em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.form-group input[type="file"] {
+    padding: 0;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 1em;
+    border: none;
+    background-color: #6a0dad;
+    color: white;
+    font-size: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #540b9e;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    body {
+        padding: 1em; /* Reduce padding for mobile */
+    }
+
+    .application-form {
+        padding: 1.5em; /* Reduce padding for the form */
+    }
+
+    .form-group label {
+        font-size: 0.9em; /* Smaller font size for labels */
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        padding: 0.6em; /* Adjust padding for inputs */
+        font-size: 0.9em; /* Smaller font size for inputs */
+    }
+
+    .form-group button {
+        padding: 0.8em; /* Adjust button padding */
+        font-size: 0.9em; /* Smaller font size for button */
+    }
+}
