@@ -5,10 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aura Product Support</title>
     <link rel="icon" href="images/auralogo.jpg" type="jpg">
-    <link rel="stylesheet" href="./css/product.css">
+    <link rel="stylesheet" href="product.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+    <!-- ----------------nav------------------ -->
+    <nav>
+        <ul class="sidebar">
+          <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+          <li><a href="#"><img src="images/auralogo.jpg" class="logo"></a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="product.html">Product Support</a></li>
+          <li><a href="index.html#careers">Careers</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+        <ul>
+          <li><a href="#"><img src="images/auralogo.jpg" class="logo"></a></li>
+          <li class="hideOnMobile"><a href="index.html">Home</a></li>
+          <li class="hideOnMobile"><a href="index.html#about">About</a></li>
+          <li class="hideOnMobile"><a href="product.html">Product Support</a></li>
+          <li class="hideOnMobile"><a href="index.html#careers">careers</a></li>
+          <li class="hideOnMobile"><a href="index.html#contact">Contact</a></li>
+          <li class="hideOnMobile"><a href="login.html"><button class=".nav-btn">Login</button></a></li>
+          <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+        </ul>
+      </nav>
+
+      <!-- ------------------------------- -->
+
     <div class="title">
         <h1>Where Solutions Meet Support</h1>
     </div>
@@ -138,9 +164,9 @@
         </div>
         <div class="footer-section">
             <h3>Overview</h3>
-            <p><a href="#header">Home</a></p>
-            <p><a href="#about">About</a></p>
-            <p><a href="#contact">Contact</a></p>
+            <p><a href="index.html">Home</a></p>
+            <p><a href="index.html#about">About</a></p>
+            <p><a href="index.html#contact">Contact</a></p>
         </div>
         <div class="footer-section">
             <h3>Contact Info</h3>
@@ -259,5 +285,16 @@
         }
 
     </script>
+    <!-- ------------------------script for nav---------- -->
+    <script>
+        function showSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'none'
+        }
+      </script>
 </body>
 </html>

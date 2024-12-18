@@ -453,107 +453,120 @@ section {
 }
 /* --------------------------------------------------------- */
 #blogs {
+    background: #545761;
     font-family: Arial, sans-serif;
-    background-color: #545454;
+    /* background-image: url(images/wood2.webp);
+    background-repeat: no-repeat;
+    background-size: cover; */
     color: white;
-    margin: 80px;
+    /* background-position: center; */
+    margin: 50px;
     padding: 80px;
     box-sizing: border-box;
     border-radius: 10px;
+    /* width: 50%; */
+    /* min-height: 100vh; */
 }
-
-.blog-container {
-    max-width: 900px;
-    margin: 50px auto;
-    text-align: center;
-}
-
-.blog-container h1 {
+#blogs h1{
     font-size: 2.5rem;
     margin-bottom: 40px;
     color: white;
-    text-transform: uppercase;
-}
-
-.blog-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 35px;
-}
-
-.blog-card {
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: left;
+    text-align: center;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+} 
+/* Container for sticky notes */
+.sticky-notes-container {
     display: flex;
-    align-items: flex-start;
-    gap: 15px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    justify-content:center; 
+    align-items: center;
+    padding: 20px;
+    gap: 70px; /* Space between notes */
+    /* margin-top: 25px; */
 }
 
-.blog-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-.blog-content h2 {
-    margin: 0;
-    font-size: 1.5rem;
-    color: #000;
-    text-transform: capitalize;
-}
-
-.blog-content p {
-    margin: 10px 0 0;
-    font-size: 0.95rem;
-    line-height: 1.6;
+/* Individual sticky note styles */
+.sticky-note {
+    position: relative;
+    width: 300px;
+    height: 180px;
+    margin-top: 25px;
+    background: #fffc7f; /* Sticky note yellow */
     color: #333;
+    padding: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    transform: rotate(-3deg); /* Slight tilt for authenticity */
 }
 
-.icon {
-    width: 15px;
-    height: 15px;
-    background-color: #ff5722;
+/* Adding a pin-like circle */
+.sticky-note::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #ff5e57;
     border-radius: 50%;
-    flex-shrink: 0;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Media Queries for Mobile Responsiveness */
+/* Sticky note hover effect */
+.sticky-note:hover {
+    transform: rotate(0deg); /* Straighten the tilt */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Media query for tablets and smaller screens (max-width: 768px) */
 @media (max-width: 768px) {
     #blogs {
-        margin: 20px; /* Reduce margin for mobile */
-        padding: 40px; /* Reduce padding for mobile */
+        margin: 20px;
+        padding: 40px;
     }
-
-    .blog-container h1 {
-        font-size: 2rem; /* Smaller font size for mobile */
-        margin-bottom: 30px; /* Adjust margin */
+    #blogs h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
     }
-
-    .blog-grid {
-        grid-template-columns: 1fr; /* Stack blog cards in a single column */
-        gap: 20px; /* Reduce gap between cards */
+    .sticky-notes-container {
+        flex-direction: column; /* Stack notes vertically */
+        gap: 30px; /* Reduce spacing between notes */
+        padding: 10px;
     }
-
-    .blog-card {
-        padding: 15px; /* Reduce padding inside blog cards */
-    }
-
-    .blog-content h2 {
-        font-size: 1.25rem; /* Smaller heading size for mobile */
-    }
-
-    .blog-content p {
-        font-size: 0.85rem; /* Smaller paragraph size for mobile */
-    }
-
-    .icon {
-        width: 12px; /* Smaller icon size for mobile */
-        height: 12px; /* Smaller icon size for mobile */
+    .sticky-note {
+        width: 250px; /* Adjust width for smaller screens */
+        height: 150px; /* Adjust height */
+        font-size: 16px; /* Reduce font size */
     }
 }
+
+/* Media query for mobile screens (max-width: 480px) */
+@media (max-width: 480px) {
+    #blogs {
+        margin: 10px;
+        padding: 20px;
+    }
+    #blogs h1 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+    .sticky-note {
+        width: 200px; /* Narrower notes for smaller screens */
+        height: 130px;
+        font-size: 14px; /* Smaller font */
+        padding: 10px; /* Adjust padding */
+    }
+    .sticky-note::before {
+        width: 15px; /* Smaller pin size */
+        height: 15px;
+        top: -8px;
+    }
+}
+
 
 
 /* ----------------------------------------------------- */
@@ -852,6 +865,29 @@ textarea {
     padding: 0.5em;
     border: 1px solid #ccc;
     border-radius: 4px;
+}
+
+.input-group1 {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.input-group1 select {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 0 0 100px; /* Fixed width for the dropdown */
+    width: 5%;
+}
+
+.input-group1 input {
+    flex: 1; /* Allow the input to take the remaining space */
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 10%;
+    
 }
 
 button {

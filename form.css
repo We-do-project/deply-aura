@@ -17,9 +17,10 @@ body {
     max-width: 600px;
 }
 
-.application-form h2 {
-    text-align: center;
-    color: #333;
+.application-form h2 .logo {
+   border-radius: 50%;
+   height: 70px;
+    
 }
 
 .form-group {

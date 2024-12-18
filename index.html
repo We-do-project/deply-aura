@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aura IT Solutions</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="images/auralogo.jpg" type="jpg">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
@@ -157,7 +157,21 @@
     </section>
     </div>
     <section id="blogs">
-        <div class="blog-container">
+         <div>
+            <h1>BLOGS</h1>
+         </div>
+        <div class="sticky-notes-container">
+            
+            <div class="sticky-note">
+                <h2>Our Vision!</h2>
+                <p>Is to achieve more clients in the upcoming financial year 2025 to make the organisation grow up on a large scale</p>
+            </div>
+            <div class="sticky-note" >
+                <h2>Our Mission!</h2>
+                <p>To hire and give opportunity 200+ employee in the upcoming financial year 2025 and we are already in the mission to bring it in live</p>
+            </div>
+        </div>
+        <!-- <div class="blog-container">
             <h1>BLOG</h1>
             <div class="blog-grid">
                 <div class="blog-card">
@@ -175,7 +189,7 @@
                     </div>
                 </div>
                
-        </div>
+        </div> -->
     
 
     </section>
@@ -230,17 +244,17 @@
                 </p>
                 <form action="#" method="POST">
                     <textarea placeholder="Kindly describe your request." required></textarea>
-                    <div class="nda-toggle">
+                    <!-- <div class="nda-toggle">
                         <label for="nda">I'd like to sign an NDA</label>
                         <input type="checkbox" id="nda">
-                    </div>
+                    </div> -->
                     <div class="input-group">
                         <input type="text" placeholder="Full name" required>
                         <input type="text" placeholder="Company" required>
                     </div>
                     <div class="input-group">
                         <input type="email" placeholder="Work email" required>
-                        <div class="input-group">
+                        <div class="input-group1">
                             <select id="country-code" required>
                                 <option value="+1">USA (+1)</option>
                                 <option value="+44">UK (+44)</option>
@@ -254,7 +268,8 @@
                                 <option value="+86">China (+86)</option>
                                 <!-- Add more country codes as needed -->
                             </select>
-                            <input type="tel" placeholder="00000 00000" required>
+                            <input type="tel" id="phone-number" name="phone-number" placeholder="Enter your phone number" required>
+
                         </div>
                     </div>
                     <button type="submit">Send</button>
